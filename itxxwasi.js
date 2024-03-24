@@ -3,13 +3,13 @@ const app = express();
 __path = process.cwd()
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8000;
-let server = require('./qr'),
-    code = require('./pairwasi');
+let server = require('./wasiqr'),
+    code = require('./wasipair');
 require('events').EventEmitter.defaultMaxListeners = 500;
-app.use('/qr', server);
+app.use('/wasiqr', server);
 app.use('/code', code);
-app.use('/pairwasi',async (req, res, next) => {
-res.sendFile(__path + '/pairwasi.html')
+app.use('/wasipair',async (req, res, next) => {
+res.sendFile(__path + '/wasipair.html')
 })
 app.use('/',async (req, res, next) => {
 res.sendFile(__path + '/wasipage.html')
