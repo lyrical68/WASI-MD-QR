@@ -1,7 +1,7 @@
 {
-    "name": "QR/Pair code-md",
-    "description": "I'm Web QR by Gifted tech & Excel",
-    "logo": "https://i.ibb.co/HtT3vjm/goku-gif-3.gif",
+    "name": "Wasi Session Generator",
+    "description": "I'm Web Session Generator by Itxx Me Wasi",
+    "logo": "",
     "repository": "https://github.com/Giftedmaurice/giftedmdV2-session-generator",
     "keywords": ["@Xcelsama"],
     "success_url": "/", 
@@ -13,7 +13,7 @@
         "required": false 
       },
       "MESSAGE": {
-        "description": "set session id conformation message",
+        "description": "",
         "value": "",
         "required": false 
       }
