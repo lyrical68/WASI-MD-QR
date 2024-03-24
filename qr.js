@@ -116,7 +116,7 @@ SESSION-ID ==> ${Scan_Id}
   }
 
 
-  GIFTED().catch(async(err) => {
+  WASI().catch(async(err) => {
     console.log(err)
     await fs.emptyDirSync(__dirname+'/auth_info_baileys'); 
 
