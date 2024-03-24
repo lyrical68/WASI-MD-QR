@@ -4,11 +4,11 @@ __path = process.cwd()
 const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8000;
 let server = require('./wasiqr'),
-    code = require('./wasipair');
+    code = require('./pair');
 require('events').EventEmitter.defaultMaxListeners = 500;
 app.use('/wasiqr', server);
 app.use('/code', code);
-app.use('/wasipair',async (req, res, next) => {
+app.use('/pair',async (req, res, next) => {
 res.sendFile(__path + '/pair.html')
 })
 app.use('/',async (req, res, next) => {
