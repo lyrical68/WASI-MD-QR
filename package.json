@@ -1,12 +1,12 @@
 {
     "description": "wasisession",
-    "main": "./Itxxwasi.js",
+    "main": "./index.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node Itxxwasi.js"
+    "start": "node index.js"
   },
   "author": "WasiTech",
   "license": "GPL-3.0 license",
