@@ -6,8 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Wasi_Tech,
-    useMultiFileAuthState,
+    default: Wasi_Tech,    useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
     Browsers
@@ -84,7 +83,7 @@ _Don't Forget To Give Star To My Repo_`
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    WASI_MD_PAIR_CODE();
+                    VENOCYBER_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
